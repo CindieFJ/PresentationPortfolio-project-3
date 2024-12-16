@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refelktion</title>
+    <link rel="stylesheet" href="../css/project-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../icons/favicon.png" type="image/png">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">Hjem</a></li>
+            <li><a href="../Om.html">Om</a></li>
+            <li><a href="../Alle-projekter.html">Alle projekter</a></li>
+            <li><a href="../Kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Project Intro Section -->
+    <section class="project-intro">
+        <div class="container">
+            <h1>Reflektion </h1>
+            <p>Reflektioner over besøg til Millentor stadium i St. Pauli</p>
+        </div>
+    </section>
+
+
+
+
+   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layout med Tekst og Billeder</title>
+        <link rel="reflektion-style" href="reflektion-style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="text-box">
+                <h2>Millentor Stadion</h2>
+                <p>Hjemsted for fodboldklubben FC St. Pauli. </p>
+                   <p>Stadionet er ikke kun et sportsligt venue, men også et kulturelt symbol, der repræsenterer klubbens unikke identitet og værdier. </p>
+
+                    
+                    <p>Jeg valgte at besøge Millentor station, da jeg var interesseret i, at se hvordan et så råt fodboldthold interagerede med både sine fans og sine udefrakommende gæster 
+                        Jeg forventede at finde inspiration i den visuelle æstetik og de narrative elementer, der præger det omkringliggende miljøs design og atmosfære.  </p>
+                    
+                    <p>Refleksion efter besøget</p>
+
+                    <p>Efter besøget er jeg blevet inspireret af stadionets grafiske elementer, som afspejler klubbens værdier om inklusivitet og social ansvarlighed. Især bemærkede jeg, hvordan de visuelle udtryk, såsom vægmalerier og plakater, formidlede stærke budskaber om modstand mod diskrimination og støtte til lokalsamfundet.</p>
+                    
+                    <p> De forskellige visuelle elementer på stadionet fortalte historier om klubbens historie og dens fans, hvilket gjorde oplevelsen mere engagerende. Dette har givet mig idéer til, hvordan jeg kan integrere narrativt design i mine egne projekter for at skabe dybere forbindelser til målgruppen.</p>
+                    
+                   <p> Det var desværre ikke tilladt at tage billeder inde på selve museet, men museet havde nogle interaktive udstillinger hvor fans kunne deltage i aktiviteter. Det gjorde også musseet meget mere engagerende.</p>
+                    
+                    <p>Alt i alt var besøget på Millentor Stadion en berigende oplevelse, der har givet mig nye perspektiver på, hvordan design kan anvendes til at skabe meningsfulde oplevelser og formidle vigtige budskaber..</p>
+            </div>
+            <div class="image-boxes">
+                <div class="image-box"></div>
+                <div class="image-box"></div>
+                <div class="image-box"></div>
+                <div class="image-box"></div>
+            </div>
+        </div>
+    </body>
+    </html>
+
+
+
+
+    <!-- Photo Gallery Section -->
+    <section class="photo-gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../images/fc logo.jpg" alt="fc logo" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/St. pauli museum.jpg" alt="museum" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/museum front.jpg" alt="Urban Photo 2" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/museum udstilling.jpg" alt="Urban Photo 3" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/museum logo grafitti.jpg" alt="Urban Photo 3" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/museum nazi.jpg" alt="Urban Photo 3" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+               
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Cluminary. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="../icons/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../icons/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../icons/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="../icons/youtube.png" alt="YouTube">
+            </a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Lightbox -->
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const close = document.getElementsByClassName('close')[0];
+        const images = document.getElementsByClassName('clickable-img');
+
+        for (let i = 0; i < images.length; i++) {
+            images[i].onclick = function() {
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.src;
+            }
+        }
+
+        close.onclick = function() {
+            lightbox.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == lightbox) {
+                lightbox.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
+

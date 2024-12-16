@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Life</title>
+    <link rel="stylesheet" href="../css/project-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../icons/favicon.png" type="image/png">
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="../index.html">Hjem</a></li>
+            <li><a href="../Om.html">Om</a></li>
+            <li><a href="../Alle-projekter.html">Alle projekter</a></li>
+            <li><a href="../Kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+
+    <!-- Project Intro Section -->
+    <section class="project-intro">
+        <div class="container">
+            <h1>Urban Life </h1>
+            <p>Projektet fanger stemningen i storbyen Hamburg</p>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="photo-gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../images/kirkeklokke.jpg" alt="Urban Photo 1" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/bro med flod.jpg" alt="Urban Photo 3" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/tunnel.jpg" alt="Urban Photo 2" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/kirke med solnedgang.jpg" alt="Urban Photo 3" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/mercedes.jpg" alt="Urban Photo 3" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/lambo.jpg" alt="Urban Photo 3" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/lyserød grafitti.jpg" alt="Urban Photo 3" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/fan shop prøverum.jpg" alt="Urban Photo 3" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/fan shop st. pauli.jpg" alt="Urban Photo 3" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/bar set forfra.jpg" alt="Urban Photo 3" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../images/bar set fra siden.jpg" alt="Urban Photo 3" class="clickable-img">
+                    <div class="full-size-btn">ÅBEN</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Cluminary. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="../icons/linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../icons/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="../icons/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.youtube.com" target="_blank">
+                <img src="../icons/youtube.png" alt="YouTube">
+            </a>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Lightbox -->
+    <script>
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const close = document.getElementsByClassName('close')[0];
+        const images = document.getElementsByClassName('clickable-img');
+
+        for (let i = 0; i < images.length; i++) {
+            images[i].onclick = function() {
+                lightbox.style.display = 'block';
+                lightboxImg.src = this.src;
+            }
+        }
+
+        close.onclick = function() {
+            lightbox.style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == lightbox) {
+                lightbox.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
+
